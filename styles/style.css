@@ -1,0 +1,35 @@
+@media (max-width: 600px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .topo {
+        width: 100vw;
+        height: 92px;
+        background-color: #CF2B2B;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        padding: 10px 0 15px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .topo h1 {
+        font-family: 'Righteous', cursive;
+        font-size: 44px;
+        line-height: 45px;
+        letter-spacing: -0.012em;
+        color: #FFF;
+    }
+
+    .topo p {
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFF;
+    }
+}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Righteous', cursive;
+*/
