@@ -91,11 +91,14 @@ li:last-child {
 }
 
 li ion-icon {
-    display: none;
     position: absolute;
     bottom: 16px;
     right: 13px;
     color: #32B72F;
+}
+
+li div {
+    display: none;
 }
 
 li img {
@@ -267,12 +270,16 @@ li span {
     color: #FFF;
 }
 
-.active {
-    display: block;
+.selected-food {
+    box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-.selected-box {
-    box-shadow: inset 0 0 5px #32B72F;
+.selected-drink {
+    box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.selected-dessert {
+    box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 /*
