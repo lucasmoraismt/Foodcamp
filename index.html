@@ -16,7 +16,7 @@
 
 <body>
     
-    <div class="topo">
+    <div class="top">
         <h1>FoodCamp</h1>
         <h2>Sua comida em 6 minutos</h2>
     </div>
@@ -28,32 +28,36 @@
                 <p>Primeiro, seu prato</p>
                 <ul>
 
-                    <li>
+                    <li onclick="selectFood()">
                         <img src="media/frango-curry.png">
                         <p>Bowl Frango Curry</p>
                         <span>Yakimeshi e frango com molho curry.</span>
                         <span class="price">R$ 24,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectFood()">
                         <img src="media/sanduiche-frango.png">
                         <p>Frango Defumado</p>
                         <span>Cubos de frango com cream cheese.</span>
                         <span class="price">R$ 22,20</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectFood()">
                         <img src="media/pizza.png">
                         <p>PROMO Pizza</p>
                         <span>Uma salgada + uma doce</span>
                         <span class="price">R$ 48,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectFood()">
                         <img src="media/kalzone.png">
                         <p>Calzone de Bife</p>
                         <span>Cubos de bife com muzzarella</span>
                         <span class="price">R$ 17,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
                     <li></li>
                 </ul>
@@ -63,32 +67,36 @@
                 <p>Agora, sua bebida</p>
                 <ul>
 
-                    <li>
+                    <li onclick="selectDrink()">
                         <img src="media/refrigerante.png">
                         <p>Refrigerante</p>
                         <span>Lata 350ml</span>
                         <span class="price">R$ 4,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDrink()">
                         <img src="media/cha.png">
                         <p>Cha Ice Tea</p>
                         <span>Garrafa 300ml</span>
                         <span class="price">R$ 5,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDrink()">
                         <img src="media/suco.png">
                         <p>Suco Natural</p>
                         <span>Garrafa 500ml</span>
                         <span class="price">R$ 6,50</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDrink()">
                         <img src="media/agua-coco.png">
                         <p>Água de Coco</p>
                         <span>Copo 300ml</span>
                         <span class="price">R$ 4,50</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
                     <li></li>
                 </ul>
@@ -98,38 +106,64 @@
                 <p>Por fim, a sobremesa</p>
                 <ul>
 
-                    <li>
+                    <li onclick="selectDessert()">
                         <img src="media/rolinho.png">
                         <p>Romeu e Julieta</p>
                         <span>Rolinho recheado: queijo e goiabada</span>
                         <span class="price">R$ 7,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDessert()">
                         <img src="media/brownie.png">
                         <p>Brownie de Twix</p>
                         <span>Chocolate, doce de leite, twix e morango.</span>
                         <span class="price">R$ 13,80</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDessert()">
                         <img src="media/pudim.png">
                         <p>Pudim</p>
                         <span>Delicioso pudim de leite</span>
                         <span class="price">R$ 6,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
 
-                    <li>
+                    <li onclick="selectDessert()">
                         <img src="media/donuts.png">
                         <p>Donut Sortido</p>
                         <span>Vários sabores incríveis</span>
                         <span class="price">R$ 8,90</span>
+                        <ion-icon name="checkmark-circle"></ion-icon>
                     </li>
                     <li></li>
                 </ul>
             </div>
 
 
+        </div>
+
+    </div>
+
+    <div class="banner">
+
+        <div class="banner-content">
+            <p>Confirme seu pedido</p>
+
+            <ul>
+
+                <li><span class="selected-food">Frango Defumado</span> <span class="selected-food-price">22,20</span></li>
+                <li><span class="selected-drink">Suco Natural</span> <span class="selected-drink-price">6,50</span></li>
+                <li><span class="selected-dessert">Romeu e Julieta</span> <span class="selected-dessert-price">7,90</span></li>
+                <li><span>TOTAL</span> <span class="total-value">R$ 36,60</span></li>
+
+            </ul>
+
+            <button class="whats-button" onclick="openWhatsApp()"><span>Tudo certo, pode pedir!</span></button>
+
+            <button class="cancel-button" onclick="closeBanner()"><span>Cancelar</span></button>
+            
         </div>
 
     </div>
@@ -143,6 +177,7 @@
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
