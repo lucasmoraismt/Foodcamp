@@ -91,14 +91,10 @@ li:last-child {
 }
 
 li ion-icon {
+    color: transparent;
     position: absolute;
     bottom: 16px;
     right: 13px;
-    color: #32B72F;
-}
-
-li div {
-    display: none;
 }
 
 li img {
@@ -142,7 +138,6 @@ li span {
     top: 0;
     left: 0;
     z-index: 2;
-    display: none;
 }
 
 .banner .banner-content {
@@ -270,6 +265,22 @@ li span {
     color: #FFF;
 }
 
+.green-button {
+    color: #32B72F;
+}
+
+.green-food {
+    color: #32B72F;
+}
+
+.green-drink { 
+    color: #32B72F;
+}
+
+.green-dessert {
+    color: #32B72F;
+}
+
 .selected-food {
     box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
@@ -282,7 +293,6 @@ li span {
     box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Righteous', cursive;
-*/
+.hidden {
+    display: none;
+}
