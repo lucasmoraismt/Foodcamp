@@ -13,8 +13,6 @@ let activeDessert = document.getElementsByClassName("selected-dessert")
 let dessertIcons = document.getElementsByClassName("dessert-icon")
 let activeDessertIcon = document.getElementsByClassName("green-dessert")
 
-
-
 for (var a=0; a < foods.length; a++) {
     foods[a].addEventListener("click", function() {
         if (activeFood.length > 0) {
@@ -28,6 +26,8 @@ for (var a=0; a < foods.length; a++) {
         let position = Array.prototype.indexOf.call(foods, this);
         this.classList.add("selected-food");
         foodIcons[position].classList.add("green-food");
+
+        activeButton()
     })
 }
 
@@ -44,6 +44,8 @@ for (var b=0; b < drinks.length; b++) {
         let position = Array.prototype.indexOf.call(drinks, this);
         this.classList.add("selected-drink");
         drinkIcons[position].classList.add("green-drink");
+
+        activeButton()
     }
     )
 }
@@ -61,6 +63,8 @@ for (var c=0; c < desserts.length; c++) {
         let position = Array.prototype.indexOf.call(desserts, this);
         this.classList.add("selected-dessert")
         dessertIcons[position].classList.add("green-dessert");
+
+        activeButton()
     }
     )
 }
@@ -75,7 +79,23 @@ function closeBanner() {
     close.classList.add('hidden');
 }
 
+function activeButton() {
+    let d = activeFood.length;
+    let e = activeDrink.length;
+    let f = activeDessert.length;
+    let button = document.querySelector(".confirm");
+
+    console.log(button);
+    
+    if (d + e + f === 3) {
+        button.disabled = false;
+        button.classList.add("green-button");
+        button.innerHTML = "<p>Fechar pedido</p>";
+    }
+}
+
 //  if flag=1: 
 //    document.getElementById("your-btn").disabled = true;
 //    else: 
 //    document.getElementById("your-btn").disabled = false;
+// toFixed(2)

@@ -133,11 +133,11 @@ li span {
 .banner {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 1071px;
     background-color: rgba(255, 255, 255, 0.9);
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .banner .banner-content {
@@ -248,9 +248,10 @@ li span {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
-.bottom button {
+.confirm {
     width: 80%;
     height: 61px;
     border-radius: 50px;
@@ -266,7 +267,7 @@ li span {
 }
 
 .green-button {
-    color: #32B72F;
+    background-color: #32B72F;
 }
 
 .green-food {
