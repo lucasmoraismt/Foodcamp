@@ -106,7 +106,7 @@ function openBanner() {
     message = encodeURIComponent(message);
     
     let url = "https://wa.me/5581998586422?text=" + message;
-    document.querySelector(".whats-button").innerHTML = '<span><a href="url">Tudo certo, pode pedir!</a></span>';
+    document.querySelector(".whats-button").innerHTML = '<span><a href="' + url + '">Tudo certo, pode pedir!</a></span>';
 }
 
 function closeBanner() {
