@@ -2,8 +2,8 @@ let foods = document.getElementsByClassName("food");
 let activeFood = document.getElementsByClassName("selected-food");
 let foodIcons = document.getElementsByClassName("food-icon");
 let activeFoodIcon = document.getElementsByClassName("green-food");
-let foodPrice = document.querySelectorAll(".food-price");
 let foodName = document.querySelectorAll(".food-name");
+let foodPrice = document.querySelectorAll(".food-price");
 let finalFoodName = document.getElementById("food-name");
 let finalFoodPrice = document.getElementById("food-price");
 
@@ -11,8 +11,8 @@ let drinks = document.getElementsByClassName("drink");
 let activeDrink = document.getElementsByClassName("selected-drink");
 let drinkIcons = document.getElementsByClassName("drink-icon");
 let activeDrinkIcon = document.getElementsByClassName("green-drink");
-let drinkPrice = document.querySelectorAll(".drink-price");
 let drinkName = document.querySelectorAll(".drink-name");
+let drinkPrice = document.querySelectorAll(".drink-price");
 let finalDrinkName = document.getElementById("drink-name");
 let finalDrinkPrice = document.getElementById("drink-price");
 
@@ -20,8 +20,8 @@ let desserts = document.getElementsByClassName("dessert");
 let activeDessert = document.getElementsByClassName("selected-dessert");
 let dessertIcons = document.getElementsByClassName("dessert-icon");
 let activeDessertIcon = document.getElementsByClassName("green-dessert");
-let dessertPrice = document.querySelectorAll(".dessert-price");
 let dessertName = document.querySelectorAll(".dessert-name");
+let dessertPrice = document.querySelectorAll(".dessert-price");
 let finalDessertName = document.getElementById("dessert-name");
 let finalDessertPrice = document.getElementById("dessert-price");
 
@@ -142,8 +142,4 @@ function price() {
 
     let totalPrice = ((fPriceHtml + drPriceHtml + dePriceHtml) / 100).toFixed(2);
     total.innerHTML = "R$ " + totalPrice.replace(".",",");
-}
-
-function openWhatsApp() {
-
 }
